@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101321">
+<title>APNA AI — Your AI. Your Future.</title>
+<style>
+:root{--bg:#0b0d18;--panel:#141827;--panel2:#1a2032;--text:#f5f7ff;--muted:#9ba5bf;--line:#2a3148;--primary:#8b7cff;--cyan:#5ce1e6;--good:#8fe0b0}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#26214a 0%,transparent 38%),var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}.app{max-width:1100px;margin:auto;padding:22px 18px 100px}.top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:30px}.brand{display:flex;align-items:center;gap:11px}.logo{height:44px;width:44px;border-radius:14px;background:linear-gradient(135deg,var(--primary),var(--cyan));display:grid;place-items:center;color:#111528;font-size:23px;font-weight:900;box-shadow:0 8px 30px #8b7cff35}.brand h1{font-size:20px;letter-spacing:.6px;margin:0}.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:1.3px}.status{border:1px solid var(--line);border-radius:30px;padding:7px 11px;color:var(--muted);font-size:12px;white-space:nowrap}.status i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--good);margin-right:6px}.hero{padding:24px 0 26px}.eyebrow{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h2{font-size:clamp(32px,7vw,56px);line-height:1.04;letter-spacing:-1.7px;margin:12px 0 14px;max-width:700px}.grad{background:linear-gradient(90deg,#b9aaff,var(--cyan));color:transparent;background-clip:text}.hero p{max-width:590px;color:var(--muted);margin:0 0 22px;font-size:16px}.search{display:flex;gap:10px;background:var(--panel);border:1px solid var(--line);padding:8px;border-radius:17px;max-width:720px}.search input{background:transparent;border:0;outline:0;color:var(--text);padding:10px;min-width:0;flex:1}.btn{border:0;border-radius:12px;padding:11px 16px;background:linear-gradient(135deg,var(--primary),#6d8cff);color:white;font-weight:750}.section-head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:30px 0 14px}.section-head h3{margin:0;font-size:19px}.section-head p{margin:3px 0 0;color:var(--muted);font-size:13px}.tiny{font-size:12px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.tool{background:linear-gradient(160deg,#191f31,#121624);border:1px solid var(--line);border-radius:18px;padding:17px;min-height:165px;text-align:left;color:var(--text);transition:.18s}.tool:hover,.tool:focus{border-color:#8b7cff;transform:translateY(-2px);outline:none}.tool .ico{width:42px;height:42px;border-radius:13px;background:#8b7cff1c;display:grid;place-items:center;font-size:21px;margin-bottom:15px}.tool strong{display:block;font-size:15px;margin-bottom:5px}.tool span{display:block;color:var(--muted);font-size:12px;line-height:1.5}.tool em{display:inline-block;margin-top:11px;color:#c9c1ff;font-size:10px;font-style:normal;font-weight:800;letter-spacing:.9px;text-transform:uppercase}.tool.future{border-style:dashed;background:#111522}.tool.future .ico{background:#5ce1e61a}.wide{display:grid;grid-template-columns:1.15fr .85fr;gap:14px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:19px}.panel h3{margin:0 0 7px;font-size:17px}.panel p{color:var(--muted);font-size:13px;margin:0 0 15px}.promptbox{width:100%;resize:vertical;min-height:96px;background:#0e1220;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:12px;outline:none}.promptbox:focus{border-color:var(--primary)}.rowbtn{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:10px}.demoout{display:none;margin-top:13px;border:1px solid #3c4160;background:#101525;border-radius:12px;padding:13px;font-size:13px;white-space:pre-wrap}.steps{display:grid;gap:12px}.step{display:flex;gap:11px;align-items:flex-start}.num{width:29px;height:29px;flex:none;border-radius:9px;background:#8b7cff20;color:#c9c1ff;display:grid;place-items:center;font-weight:800}.step strong{display:block;font-size:13px}.step span{display:block;color:var(--muted);font-size:12px}.notice{margin-top:18px;border:1px solid #514a77;background:#17152a;border-radius:14px;padding:13px 15px;color:#c6c3dd;font-size:12px}.footer{margin-top:35px;border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:11px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#f4f2ff;color:#19172b;padding:12px 17px;border-radius:12px;box-shadow:0 10px 35px #0008;display:none;max-width:90%;z-index:9;font-size:13px}.mobile-nav{display:none}
+@media(max-width:700px){.app{padding:16px 14px 90px}.top{margin-bottom:19px}.hero{padding-top:10px}.hero h2{font-size:38px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.tool{padding:14px;min-height:155px}.wide{grid-template-columns:1fr}.section-head{margin-top:25px}.status{font-size:10px}.footer{flex-direction:column}.mobile-nav{display:flex;position:fixed;bottom:0;left:0;right:0;background:#101321f2;backdrop-filter:blur(14px);border-top:1px solid var(--line);justify-content:space-around;padding:10px 4px calc(10px + env(safe-area-inset-bottom));z-index:5}.mobile-nav button{border:0;background:none;color:var(--muted);font-size:10px;display:grid;gap:3px;justify-items:center}.mobile-nav b{font-size:18px;font-weight:500}.mobile-nav button.active{color:#c8c0ff}}
+@media(max-width:370px){.grid{grid-template-columns:1fr}.hero h2{font-size:33px}.search{flex-wrap:wrap}.search input{flex-basis:100%}.search .btn{width:100%}}
+</style>
+</head>
+<body>
+<main class="app" id="home">
+<header class="top">
+  <div class="brand"><div class="logo">A</div><div><h1>APNA AI</h1><small>YOUR AI. YOUR FUTURE.</small></div></div>
+  <div class="status"><i></i> Prototype mode</div>
+</header>
+<section class="hero">
+  <div class="eyebrow">One workspace. More possibilities.</div>
+  <h2>Your ideas.<br><span class="grad">Powered by AI.</span></h2>
+  <p>A future-ready workspace for creating, building and growing. Start with an idea today; add more tools as your needs grow.</p>
+  <form class="search" id="ideaForm"><input id="idea" placeholder="What do you want to create today?" aria-label="Your idea"><button class="btn" type="submit">Explore idea ↗</button></form>
+</section>
+<section id="tools">
+  <div class="section-head"><div><h3>Explore tools</h3><p>Choose a workspace to get started.</p></div><span class="tiny">6 modules</span></div>
+  <div class="grid">
+    <button class="tool" data-tool="AI Chat"><div class="ico">✦</div><strong>AI Chat</strong><span>Brainstorm, write, plan and learn.</span><em>Open workspace ↗</em></button>
+    <button class="tool" data-tool="Image Studio"><div class="ico">▧</div><strong>Image Studio</strong><span>Plan image concepts and creative prompts.</span><em>Open workspace ↗</em></button>
+    <button class="tool" data-tool="Video Studio"><div class="ico">▶</div><strong>Video Studio</strong><span>Build short-video ideas and shot lists.</span><em>Open workspace ↗</em></button>
+    <button class="tool" data-tool="App Builder"><div class="ico">⌘</div><strong>App Builder</strong><span>Turn a product idea into a starter blueprint.</span><em>Open workspace ↗</em></button>
+    <button class="tool" data-tool="Business Studio"><div class="ico">↗</div><strong>Business Studio</strong><span>Plan offers, marketing and customer research.</span><em>Open workspace ↗</em></button>
+    <button class="tool future" data-tool="Future Tools"><div class="ico">＋</div><strong>Future Tools</strong><span>Designed to expand with new providers and plugins.</span><em>Expandable module ↗</em></button>
+  </div>
+</section>
+<section class="section-head"><div><h3>Try the idea lab</h3><p>A local demo that turns your prompt into a starter outline.</p></div></section>
+<section class="wide">
+  <div class="panel">
+    <h3>Idea → first steps</h3>
+    <p>Describe your idea. This demo runs in your browser and does not call a live AI service.</p>
+    <textarea id="prompt" class="promptbox" placeholder="Example: I want to build an app that helps small shops make ads."></textarea>
+    <div class="rowbtn"><span class="tiny">Demo mode · No account needed</span><button class="btn" id="makePlan">Create outline</button></div>
+    <div id="output" class="demoout" aria-live="polite"></div>
+  </div>
+  <div class="panel">
+    <h3>Built for what comes next</h3><p>Keep the architecture flexible instead of trying to build every tool at once.</p>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><div><strong>Start small</strong><span>Validate one useful feature with real people.</span></div></div>
+      <div class="step"><div class="num">2</div><div><strong>Connect providers later</strong><span>Plug in AI services when budget and access allow.</span></div></div>
+      <div class="step"><div class="num">3</div><div><strong>Share a backend</strong><span>Website first, Android app next, same core services.</span></div></div>
+      <div class="step"><div class="num">4</div><div><strong>Grow safely</strong><span>Add accounts, permissions, usage limits and privacy controls.</span></div></div>
+    </div>
+  </div>
+</section>
+<div class="notice">Important: This is an interactive visual prototype, not a deployed service. AI tools, login, cloud storage, payments and Android installation are not connected yet.</div>
+<footer class="footer"><span>© APNA AI · Early prototype</span><span>Built to grow modularly · Privacy-first by design</span></footer>
+</main>
+<nav class="mobile-nav" aria-label="Quick navigation">
+  <button class="active" data-jump="home"><b>⌂</b>Home</button>
+  <button data-jump="tools"><b>✦</b>Tools</button>
+  <button data-jump="prompt"><b>＋</b>Idea Lab</button>
+</nav>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const toast = (msg) => { const t=document.getElementById('toast');t.textContent=msg;t.style.display='block';clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.style.display='none',2600); };
+document.querySelectorAll('[data-tool]').forEach(btn=>btn.addEventListener('click',()=>{
+ const tool=btn.dataset.tool;
+ document.getElementById('prompt').value = tool==='Future Tools' ? 'Suggest a useful new module for APNA AI.' : `Help me plan the first version of ${tool} for APNA AI.`;
+ document.getElementById('prompt').scrollIntoView({behavior:'smooth',block:'center'});
+ toast(`${tool} selected — demo workspace`);
+}));
+document.getElementById('ideaForm').addEventListener('submit',e=>{
+ e.preventDefault(); const v=document.getElementById('idea').value.trim();
+ if(!v){toast('Write a short idea first.');return}
+ document.getElementById('prompt').value=v;
+ document.getElementById('prompt').scrollIntoView({behavior:'smooth',block:'center'});
+ toast('Idea added to the Idea Lab.');
+});
+document.getElementById('makePlan').addEventListener('click',()=>{
+ const v=document.getElementById('prompt').value.trim(), out=document.getElementById('output');
+ if(!v){toast('Describe your idea first.');return}
+ out.style.display='block';
+ out.textContent=`STARTER OUTLINE\n\nIdea: ${v}\n\n1. Target user: Who has this problem most often?\n2. Smallest first feature: Solve one problem clearly.\n3. Validate: Show a simple demo to 5–10 potential users.\n4. Measure: Ask whether they would use it again or pay for it.\n5. Next step: Improve only after real feedback.\n\nNote: This is a fixed local demo outline, not AI-generated advice.`;
+});
+document.querySelectorAll('[data-jump]').forEach(btn=>btn.addEventListener('click',()=>{
+ const id=btn.dataset.jump; const el=document.getElementById(id);
+ if(id==='prompt'){el.scrollIntoView({behavior:'smooth',block:'center'});document.getElementById('prompt').focus();}
+ else el.scrollIntoView({behavior:'smooth',block:'start'});
+ document.querySelectorAll('[data-jump]').forEach(b=>b.classList.toggle('active',b===btn));
+}));
+</script>
+</body></html>
